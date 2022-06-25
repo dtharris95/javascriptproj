@@ -1,0 +1,55 @@
+<!-- 
+		Name: Damari Harris
+		Date: 3/23/2022
+		Class: CSCI2447, Javascript Fundamentals
+		Project 2
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+    <title>Bye-Bye Basketball!</title>
+    <link rel="icon" type="image/x-icon" href="img/basketball.png">
+	<link href="css/game.css" rel="stylesheet" />
+    <meta charset ="utf-8">
+  </head>
+  <body>
+	  
+	<div id="content">
+
+		<h1></h1>
+		
+		<p id="first"></p>
+		<p id="directions"></p>
+		
+		<div id="controls">
+			<span id="score">0 pts</span>
+			<button type="button" id="start_button">Start!</button>
+		</div>
+		
+		<div class="timer">
+			<p id="timertext">30 seconds</p>
+		</div>
+				
+		<div id="gamespace"></div>
+		
+	</div><!--ends content div -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="js/game.js"></script>
+	<script src="jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+
+<!-- SCRIPT BELOW FINDS DIMENSIONS OF GAMESPACE DIV: 634W X 350H -->
+	<!-- <script>
+		$("document").ready(function(){
+				let txt = "";
+				txt += "Width of div: " + $("#gamespace").width() + "</br>";
+				txt += "Height of div: " +$("#gamespace").height();
+				$("#gamespace").html(txt);
+		});
+	</script> -->
+  </body>
+</html>
